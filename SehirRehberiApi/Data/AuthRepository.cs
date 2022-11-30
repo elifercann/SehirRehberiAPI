@@ -9,7 +9,11 @@ namespace SehirRehberiApi.Data
 {
     public class AuthRepository : IAuthRepository
     {
-        DataContext _context;
+        private DataContext _context;
+        public AuthRepository(DataContext context)
+        {
+            _context = context;
+        }
         public async Task<User> Login(string UserName, string password)
         {
             var user = await _context.Users.FirstOrDefaultAsync(x => x.UserName == UserName);

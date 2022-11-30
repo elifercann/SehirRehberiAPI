@@ -39,11 +39,11 @@ namespace SehirRehberiApi
                     .AddNewtonsoftJson(options =>options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddAutoMapper(typeof(Startup));
-            
-            //services.AddMvc().AddJsonOptions(o =>
-            //{
-            //    o.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
-            //});
+
+            services.AddMvc().AddJsonOptions(o =>
+            {
+                o.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SehirRehberiApi", Version = "v1" });
