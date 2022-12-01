@@ -18,6 +18,8 @@ namespace SehirRehberiApi.Helpers
                 });
 
             CreateMap<City, CityForDetailDto>();
+            CreateMap<Photo, PhotoForCreationDto>();
+            CreateMap<PhotoForReturnDto,Photo>();
         }
     }
 }

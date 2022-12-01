@@ -11,6 +11,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using SehirRehberiApi.Data;
+using SehirRehberiApi.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,7 +34,7 @@ namespace SehirRehberiApi
         public void ConfigureServices(IServiceCollection services)
         {
             var key = Encoding.ASCII.GetBytes(Configuration.GetSection("AppSettings:Token").Value);
-
+            services.Configure<CloudinarySettings>(Configuration.GetSection("CouldinarSettings"));
             services.AddControllers();
             services.AddControllersWithViews()
                     .AddNewtonsoftJson(options =>options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
