@@ -67,3 +67,4 @@ C:\Users\ercan\source\repos\SehirRehberiApi\SehirRehberiApi\bin\Debug\net5.0\Mic
 C:\Users\ercan\source\repos\SehirRehberiApi\SehirRehberiApi\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\ercan\source\repos\SehirRehberiApi\SehirRehberiApi\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 C:\Users\ercan\source\repos\SehirRehberiAPI\SehirRehberiApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ercan\source\repos\SehirRehberiAPI\SehirRehberiApi\bin\Debug\net5.0\CloudinaryDotNet.dll

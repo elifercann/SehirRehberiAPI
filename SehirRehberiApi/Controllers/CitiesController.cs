@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 namespace SehirRehberiApi.Controllers
 {
     [Route("api/[controller]")]
+    [Consumes("application/json")]
     [ApiController]
     public class CitiesController : ControllerBase
     {

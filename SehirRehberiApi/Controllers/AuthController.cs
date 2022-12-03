@@ -16,6 +16,7 @@ using System.Threading.Tasks;
 namespace SehirRehberiApi.Controllers
 {
     [Route("api/Auth")]
+    [Consumes("application/json")]
 
     public class AuthController : Controller
     {

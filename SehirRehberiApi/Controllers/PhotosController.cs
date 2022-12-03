@@ -17,6 +17,7 @@ using System.Threading.Tasks;
 namespace SehirRehberiApi.Controllers
 {
     [Route("api/cities/cityId/photos")]
+    [Consumes("application/json")]
     [ApiController]
     public class PhotosController : ControllerBase
     {
