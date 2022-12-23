@@ -46,6 +46,7 @@ namespace SehirRehberiApi.Controllers
             return Ok(photos);
         }
         [HttpPost]
+        [Route("add")]
         public ActionResult Add([FromBody] City city)
         {
             _appRepository.Add(city);
